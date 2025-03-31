@@ -1,0 +1,44 @@
+{% extends 'main_html.html' %}
+
+{% block title %}
+О сайте
+{% endblock %}
+
+
+{% block body %}
+  <div class="container">
+    <form class="label" action="" method="post" enctype="multipart/form-data">
+        <label for="text_web">Заголовок</label>
+        <input type="text"
+               placeholder="Напиши заголовок"
+               maxlength="20" name="text_web" id="text_web"><br><br>
+
+        <label for="Articles_web">Статья</label>
+        <textarea id="Articles_web" name="story" rows="15" cols="80" placeholder="Расскажите что-то интересное"
+        maxlength="1500"></textarea><br><br>
+
+
+
+        <input type="file" id="photo" name="photo" accept="image/*">
+
+        <input type="reset" value="Очистить"><br><br>
+
+        <label for="city">Выберите категорию:</label>
+        <select id="city" name="user-sity" required>
+            <option disabled value="" selected>Не выбрано</option>
+            <option value="Nature">Природа</option>
+            <option value="Politics">Политика</option>
+            <option value="Car">Авто</option>
+            <option value="Economy">Экономика</option>
+            <option value="Cryptocurrency">Криптовалюта</option>
+            <option value="Weather">Погода</option>
+            <option value="Other">Прочее</option>
+        </select><br><br>
+
+        <button onclick="alert('POST отправлен ')" type="submit">Отправить POST</button><br><br>
+
+
+    </form>
+</div>
+
+{% endblock %}

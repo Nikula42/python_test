@@ -1,0 +1,21 @@
+{% extends 'main_html.html' %}
+
+{% block title %}
+О сайте
+{% endblock %}
+
+
+{% block body %}
+    <div class="post-container">
+        <div class="text-section">
+            <h1>Название поста</h1>
+            <p>
+                {{post.text}}
+            </p>
+        </div>
+        <div class="image-section">
+            <img src="https://via.placeholder.com/400" alt="Изображение поста">
+        </div>
+    </div>
+
+{% endblock %}

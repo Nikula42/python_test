@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Подключаем разную мета-информацию -->
+    <!-- Подлючаем общие стили -->
+    <title> {% block title %}{% endblock %} </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+<header>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand">Articles🧾</a>
+
+            <div class="navbar-wrap">
+                <ul class="navbar-menu">
+                    <li><a href="#">Добавление поста</a></li>
+                    <li><a href="#">Категории</a></li>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Поддержка</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+{% block body %}
+{% endblock %}
+
+</body>
+</html>
