@@ -24,13 +24,13 @@ def allowed_file(filename):
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    posts = Post.query.all()
+    return render_template('index.html', posts=posts)
 
 
-@app.route('/post/<id>')
+@app.route('/post/<int:id>')
 def hello(id):
     post2 = Post.query.get_or_404(id)
-    print(post2)
     return render_template('post.html', post=post2)
 
 @app.route('/add_post', methods=["POST", "GET"])

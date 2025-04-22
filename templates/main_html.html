@@ -6,6 +6,45 @@
     <title> {% block title %}{% endblock %} </title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
+    <style>
+        .posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.post {
+    background-color: black;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+    width: 90%;
+}
+.post h2 {
+    margin-top: 0;
+}
+
+.post p {
+    margin-top: 0;
+}
+
+p.pop {
+    overflow: hidden;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-align: left;
+}
+
+.title {
+    color: white !important;
+    text-decoration: none;
+}
+    </style>
 </head>
 
 <body>
@@ -16,10 +55,9 @@
 
             <div class="navbar-wrap">
                 <ul class="navbar-menu">
-                    <li><a href="#">Добавление поста</a></li>
-                    <li><a href="#">Категории</a></li>
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Поддержка</a></li>
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="add_post">Добавление поста</a></li>
+                    <li><a href="post/5">Категории</a></li>
                 </ul>
 
             </div>
