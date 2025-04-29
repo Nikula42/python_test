@@ -147,11 +147,12 @@ textarea {
     margin-top: 150px;
     flex-direction: column;
 
-.text-section {
-}
-
-
 .title {
     color: white !important;
     text-decoration: none;
+}
+img{
+    border-radius: 25px;
+    width: 1000px;
+    margin-top: 50px;
 }
