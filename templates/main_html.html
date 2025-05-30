@@ -44,6 +44,41 @@ p.pop {
     color: white !important;
     text-decoration: none;
 }
+
+.registration {
+color: #AFEEEE;
+}
+
+.container2 {
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: +180px;
+
+}
+
+.auth-form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="password"] {
+    width: 15%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.auth-form input[type="text"]:focus,
+.auth-form input[type="password"]:focus {
+    border-color: #007bff;
+}
+
+
     </style>
 </head>
 
@@ -57,7 +92,8 @@ p.pop {
                 <ul class="navbar-menu">
                     <li><a href="/">Главная</a></li>
                     <li><a href="add_post">Добавление поста</a></li>
-                    <li><a href="post/5">Категории</a></li>
+                    <li><a href="auth/login">Авторизация/Вход</a></li>
+                    <li><a href="auth/register">Регистрация</a></li>
                 </ul>
 
             </div>

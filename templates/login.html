@@ -1,0 +1,24 @@
+{% extends 'main_html.html' %}
+
+{% block title %}
+О сайте
+{% endblock %}
+
+
+{% block body %}
+<body>
+    <div class="container2">
+        <form action="#" method="post" class="auth-form">
+            <h2 class="registration">Авторизация</h2>
+            <label for="username">Введите имя:</label>
+            <input type="text" id="username" name="username" required placeholder="Ваше имя..."/><br><br>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required placeholder="Ваш пароль..."/><br><br>
+
+            <button type="submit">Войти</button>
+        </form>
+    </div>
+</body>
+
+{% endblock %}
